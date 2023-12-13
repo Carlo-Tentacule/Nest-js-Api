@@ -5,6 +5,7 @@ import { UsersModule } from './users/users.module';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { AuthModule } from './auth/auth.module';
 import { ConfigModule } from '@nestjs/config';
+import { BanknoteModule } from './banknote/banknote.module';
 import configuration from 'config/configuration';
 
 @Module({
@@ -21,6 +22,7 @@ import configuration from 'config/configuration';
     }),
     UsersModule,
     AuthModule,
+    BanknoteModule,
     ConfigModule.forRoot({
       // envFilePath: ['.env.development.local', '.env.development'],
       isGlobal: true,

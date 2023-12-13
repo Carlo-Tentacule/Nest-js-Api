@@ -6,7 +6,7 @@ import { ApiTags } from '@nestjs/swagger';
 import { AuthGuard } from 'src/auth/auth.gard';
 
 @ApiTags('users')
-// @UseGuards(AuthGuard)
+@UseGuards(AuthGuard)
 @Controller('users')
 export class UsersController {
   constructor(private readonly usersService: UsersService) { }

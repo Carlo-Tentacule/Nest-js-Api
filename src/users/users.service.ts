@@ -13,12 +13,6 @@ export class UsersService {
     private usersRepository: Repository<User>,
   ) { }
 
-  // Old Post Create User
-
-  // create(createUserDto: CreateUserDto) {
-  //   return this.usersRepository.save(createUserDto)
-  // }
-
   //Asynchrone
 
   async create(createUserDto: CreateUserDto | UpdateUserDto): Promise<User> {

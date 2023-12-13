@@ -10,7 +10,7 @@ export class CreateUserDto {
     @ApiProperty({
         description: 'Nom'
     })
-    lasttName: string;
+    lastName: string;
 
     @ApiProperty({
         description: 'Mail'
